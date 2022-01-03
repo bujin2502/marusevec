@@ -28,12 +28,26 @@ body {
     display: flex;
     flex-flow: row;
     align-items: center;
+    padding: 0px 10%;
   }
 
-  header img{
-      width: 160px;
-      margin-right: 35vw;
+  .logo{
+    width: 50vw;
   }
+
+  .logo img{
+      width: 160px;
+  }
+
+  .dd-menu{
+    width: 50vw;
+    display: flex;
+    flex-flow: row;
+    /*align-content: right;*/
+    justify-content: right;
+    padding-right: 0%;
+  }
+
   
   header a {
     float: left;
@@ -138,8 +152,82 @@ body {
     float: left;
     width: 24.99999%;
   }
+
+   /* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); /* Black fallback color */
+  background-color: rgba(100,255,100, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #A9A9A9;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay, .hamburger{
+  display: none;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+} 
   
   @media only screen and (max-width: 700px) {
+
+    .dropdown{
+      display: none;
+    }
+
+    .overlay, .hamburger{
+      display: block;
+    }
+
     .responsive {
       width: 49.99999%;
       margin: 6px 0;

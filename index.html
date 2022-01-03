@@ -13,7 +13,9 @@
 
 <header>
   <a href="#home"><img src="img/Logo.png" alt="Logo općine Maruševec"></a>
+  </div>
 
+<div class="dd-menu">
 <!--dropdown-->
 
   <div class="dropdown">
@@ -70,6 +72,33 @@
       <a href="#">Kontakt</a>
     </div>
   </div> 
+</div>
+  <!--Mobile Nav-->
+
+   <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">Posjeti</a>
+    <a href="#">Istraži</a>
+    <a href="#">Budi aktivan</a>
+    <a href="#">Događaji</a>
+    <a href="#">Info</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+  
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()"; class="hamburger" >&#9776;</span>
+  
+
+
+
 </header>
 
 <main>
@@ -91,5 +120,15 @@
 
 </footer>
 
+
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
 </body>
 </html>
