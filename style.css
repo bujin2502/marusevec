@@ -24,7 +24,7 @@ body {
     right: 0px;
     max-width: 1920px;
     width: 100%;
-    background-color: #fff;
+    background-color: #989da3;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -100,7 +100,7 @@ body {
   footer{
     display: flex;
     flex-flow: row;
-    background-color: #000;
+    background-color: #3d502f;
     color: #ddd;
   }
 
