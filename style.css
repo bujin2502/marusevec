@@ -40,7 +40,7 @@ body {
   }
 
   .dd-menu{
-    width: 50vw;
+    width: 60vw;
     display: flex;
     flex-flow: row;
     /*align-content: right;*/
@@ -64,7 +64,7 @@ body {
   }
   
   .dropdown .dropbtn {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;  
     border: none;
     outline: none;
@@ -97,6 +97,7 @@ body {
     text-decoration: none;
     display: block;
     text-align: left;
+    font-size: 18px;
   }
   
   .dropdown-content a:hover {
@@ -198,9 +199,10 @@ body {
 /* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+  top: 4px;
+  right: 35px;
+  font-size: 45px;
+  padding: 0px;
 }
 
 .overlay, .hamburger{

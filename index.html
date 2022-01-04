@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -7,37 +9,38 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet"> 
-
 </head>
+
+
 <body>
 
+
 <header>
+  <div class="logo">
   <a href="#home"><img src="img/Logo.png" alt="Logo općine Maruševec"></a>
   </div>
-
 <div class="dd-menu">
 <!--dropdown-->
-
-  <div class="dropdown">
-    <button class="dropbtn">Posjeti 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="posjeti.html#smjestaj">Smještaj</a>
-      <a href="posjeti.html#restorani">Restorani</a>
-      <a href="#">Agencije i izleti</a>
-      <a href="#">Korisne informacije</a>
-    </div>
-  </div> 
+<div class="dropdown">
+  <button class="dropbtn">Posjeti 
+    <i class="fa fa-caret-down"></i>
+      </button>
+        <div class="dropdown-content">
+          <a href="posjeti.html#smjestaj">Smještaj</a>
+          <a href="posjeti.html#restorani">Restorani</a>
+          <a href="posjeti.html#informacije">Korisne informacije</a>
+        </div>
+</div> 
+  
   <div class="dropdown">
     <button class="dropbtn">Istraži 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Povijest</a>
-      <a href="#">Dvorac</a>
-      <a href="#">Općina</a>
-      <a href="#">Škola</a>
+      <a href="istrazi.html#dvorac">Dvorac</a>
+      <a href="istrazi.html#crkva">Crkva</a>
+      <a href="istrazi.html#opcina">Općina</a>
+      <a href="istrazi.html#skola">Osnovna škola</a>
     </div>
   </div> 
   <div class="dropdown">
@@ -45,11 +48,9 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="kuburaska.html">Kuburaska udruga</a>
-      <a href="#">Biciklističke staze</a>
-      <a href="#">Planinarske staze</a>
-      <a href="#">Bazeni</a>
-      <a href="#">Tenis</a>
+      <a href="aktivan.html#biciklo">Biciklističke staze</a>
+      <a href="aktivan.html#kubura">Kuburaška udruga</a>
+      <a href="aktivan.html#zene">Udruga žena</a>
     </div>
   </div> 
 
@@ -58,8 +59,10 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">Dan općine</a>
-      <a href="#">Advent</a>
+      <a href="dogadaji.html#advent">Advent</a>
+      <a href="dogadaji.html#ciselska">Čiselska nedela</a>
+      <a href="dogadaji.html#opcina">Dan općine</a>
+
     </div>
   </div> 
   <div class="dropdown">
@@ -67,15 +70,14 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#">O nama</a>
-      <a href="#">Lokator</a>
-      <a href="#">Kontakt</a>
+      <a href="info.html#nama">O nama</a>
+      <a href="info.html#kontakt">Kontakt / Lokator</a>
     </div>
   </div> 
 </div>
   <!--Mobile Nav-->
 
-   <!-- The overlay -->
+  <!-- The overlay -->
 <div id="myNav" class="overlay">
 
   <!-- Button to close the overlay navigation -->
@@ -83,18 +85,18 @@
 
   <!-- Overlay content -->
   <div class="overlay-content">
-    <a href="#">Posjeti</a>
-    <a href="#">Istraži</a>
-    <a href="#">Budi aktivan</a>
-    <a href="#">Događaji</a>
-    <a href="#">Info</a>
+    <a href="posjeti.html">Posjeti</a>
+    <a href="istrazi.html">Istraži</a>
+    <a href="aktivan.html">Budi aktivan</a>
+    <a href="dogadaji.html">Događaji</a>
+    <a href="info.html">Info</a>
   </div>
 
 </div>
 
 <!-- Use any element to open/show the overlay navigation menu -->
   
-  <span style="font-size:20px;cursor:pointer" onclick="openNav()"; class="hamburger" >&#9776;</span>
+  <span style="font-size:25px;cursor:pointer" onclick="openNav()"; class="hamburger" >&#9776;</span>
   
 
 
