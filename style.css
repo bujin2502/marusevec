@@ -286,7 +286,6 @@ footer{
 
 h3 {
   letter-spacing: 5px;
-  text-transform: uppercase;
   color: #111;
 }
 
@@ -374,4 +373,46 @@ h3 {
     font-family: inherit;
     margin: 0;
   }
+}
+
+/* Kontakt */
+
+.kontakt {
+  padding: 0% 10%;
+}
+
+.map {
+text-align: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #078C03;
+  color: #FFFF00;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+input[type=submit]:hover {
+  background-color: #0ABF04;
+  color: #fff;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
