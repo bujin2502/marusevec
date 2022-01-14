@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web stranice Turističke zajednice Općine Maruševec"
+    />
+    <meta name="author" content="Zlatko Pračić, Marijana Fatiga" />
+    <meta
+      name="keywords"
+      content="Maruševec, dvorac, crkva, Pontgratz, biciklijada,"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Maruševec</title>
+  </head>
+
+  <body>
+    <!--Naslovna-->
+    <header>
+      <!--Navigacija-->
+      <div class="logo">
+        <a href="index.html"
+          ><img src="img/Logo.png" alt="Logo općine Maruševec"
+        /></a>
+      </div>
+      <div class="dd-menu">
+        <!--dropdown-->
+        <div class="dropdown">
+          <button class="dropbtn">
+            Posjeti
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="posjeti.html#smjestaj">Smještaj</a>
+            <a href="posjeti.html#restorani">Restorani</a>
+            <a href="posjeti.html#informacije">Korisne informacije</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            Istraži
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="istrazi.html#dvorac">Dvorac</a>
+            <a href="istrazi.html#crkva">Crkva</a>
+            <a href="istrazi.html#opcina">Općina</a>
+            <a href="istrazi.html#skola">Osnovna škola</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Budi aktivan
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="aktivan.html#biciklo">Biciklističke staze</a>
+            <a href="aktivan.html#kubura">Kuburaška udruga</a>
+            <a href="aktivan.html#zene">Udruga žena</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            Događaji
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="dogadaji.html#advent">Advent</a>
+            <a href="dogadaji.html#ciselska">Čiselska nedela</a>
+            <a href="dogadaji.html#opcina">Dan općine</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Info
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="info.html#nama">O nama</a>
+            <a href="info.html#kontakt">Kontakt / Lokator</a>
+          </div>
+        </div>
+      </div>
+      <!--Mobile Nav-->
+
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="posjeti.html">Posjeti</a>
+          <a href="istrazi.html">Istraži</a>
+          <a href="aktivan.html">Budi aktivan</a>
+          <a href="dogadaji.html">Događaji</a>
+          <a href="info.html">Info</a>
+        </div>
+      </div>
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+
+      <span
+        style="font-size: 25px; cursor: pointer"
+        onclick="openNav()"
+        class="hamburger"
+        >&#9776;</span
+      >
+    </header>
+
+    <main>
+      <div>
+        <h1>O nama</h1>
+      </div>
+      <div class="info">
+        <div class="triple-column">
+          <h2>Kontakt forma</h2>
+          <div class="container">
+            <form action="/action_page.php">
+              <label for="fname">Ime</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Vaše ime.."
+              />
+
+              <label for="lname">Prezime</label>
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Vaše prezime.."
+              />
+
+              <label for="country">Država</label>
+              <select id="country" name="country">
+                <option value="hrvatska">Hrvatska</option>
+                <option value="Slovenija">Slovenija</option>
+                <option value="Mađarska">Mađarska</option>
+              </select>
+
+              <label for="subject">Predmet</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Napišite nešto.."
+                style="height: 200px"
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+        <div class="triple-column">
+          <h2>Gdje se nalazimo</h2>
+          <p class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22062.607313599932!2d16.16399135485173!3d46.27356382758547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765f8a63416bf2f%3A0x2b29be61d26ea60!2s42243%2C%20Maru%C5%A1evec!5e0!3m2!1sen!2shr!4v1642176733484!5m2!1sen!2shr"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </p>
+        </div>
+        <div class="triple-column">
+          <ul>
+            <li><h5>Turistička zajednica općine Maruševec</h5></li>
+            <li>
+              <p class="podnozje">
+                Upoznajte baštinu i prirodne ljepote naše općine, uživajte u
+                našim kulturno zabavnim programima.
+              </p>
+            </li>
+            <li><p class="podnozje">+385 42 1111 222</p></li>
+            <li><p class="podnozje">Maruševec 22</p></li>
+            <li><a href="mailto:info@marusevec.hr">info@marusevec.hr</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="triple-column">
+        <ul>
+          <li><h5>Turistička zajednica općine Maruševec</h5></li>
+          <li>
+            <p class="podnozje">
+              Upoznajte baštinu i prirodne ljepote naše općine, uživajte u našim
+              kulturno zabavnim programima.
+            </p>
+          </li>
+          <li><p class="podnozje">+385 42 1111 222</p></li>
+          <li><p class="podnozje">Maruševec 22</p></li>
+          <li><a href="mailto:info@marusevec.hr">info@marusevec.hr</a></li>
+        </ul>
+      </div>
+      <div class="triple-column">
+        <ul>
+          <li><h5>Važnije informacije</h5></li>
+          <li><a href="#">Otvoreni natječaji</a></li>
+          <li><a href="#">Zatvoreni natječaji</a></li>
+          <li><a href="#">Godišnje financijsko izvješće</a></li>
+        </ul>
+        <ul>
+          <li><h5>Općine prijatelji</h5></li>
+          <li>
+            <a href="https://www.rogatec.si/" target="_blank"
+              >Općina Rogatec (Republika Slovenija)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.rattenberg.at/" target="_blank"
+              >Općina Rattenberg (Republika Austrija)</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="triple-column">
+        <ul>
+          <li><h5>Direktor</h5></li>
+          <li>Ivo Ivić</li>
+          <li>telefon: + 385 42 1111 333</li>
+          <li>
+            <a href="mailto:direktor@marusevec.hr">direktor@marusevec.hr</a>
+          </li>
+        </ul>
+        <ul>
+          <li><h5>Tajnica</h5></li>
+          <li>Ana Horvat</li>
+          <li>telefon: + 385 42 1111 444</li>
+          <li>
+            <a href="mailto:tajnica@marusevec.hr">tajnica@marusevec.hr</a>
+          </li>
+        </ul>
+        <ul>
+          <li><h5>Webmaster</h5></li>
+          <li>Petar Perić</li>
+          <li>telefon: + 385 42 1111 555</li>
+          <li>
+            <a href="mailto:webmaster@marusevec.hr">webmaster@marusevec.hr</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="social-network">
+      <a
+        href="https://www.youtube.com/channel/UC1gkZQBr_0aXL4TyS8fZpIg/featured"
+        target="_blank"
+        ><i class="fa fa-youtube-play fa-2x"></i
+      ></a>
+      <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
+      <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+  </body>
+</html>
