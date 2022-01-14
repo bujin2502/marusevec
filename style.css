@@ -27,16 +27,6 @@ main div {
   margin-top: 0px;
 }
 
-.parni {
-  background-color: #0abf04;
-  width: 100%;
-}
-
-.neparni {
-  background-color: #ede9e8;
-  padding: 0px;
-}
-
 body {
   font-family: Poppins, sans-serif;
   background-color: #fff; /* boja */
