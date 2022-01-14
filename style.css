@@ -16,9 +16,18 @@ h4 {
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 800;
   margin: 4px 0px;
   color: #fff; /* boja */
+}
+
+p {
+  color: #616161;
+}
+
+p.podnozje {
+  color: #ffff80;
 }
 
 main div {
@@ -55,8 +64,10 @@ ul {
 }
 
 a {
-  color: #ffff00; /* boja */
+  color: #ffff80; /* boja */
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 a:hover {
@@ -104,7 +115,7 @@ header a {
   font-weight: 500;
   border: none;
   outline: none;
-  color: #ffff00; /* boja */
+  color: #ffff80; /* boja */
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -114,7 +125,7 @@ header a {
 header a:hover,
 .dropdown:hover .dropbtn {
   text-decoration: underline;
-  text-decoration-color: #ffff00; /* boja */
+  text-decoration-color: #ffff80; /* boja */
   transition: 1s;
 }
 
@@ -129,7 +140,7 @@ header a:hover,
 
 .dropdown-content a {
   float: none;
-  color: #ffff00; /* boja */
+  color: #ffff80; /* boja */
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -148,7 +159,7 @@ header a:hover,
 footer {
   display: flex;
   flex-flow: row;
-  background-color: #078c03; /* boja */
+  background-color: #008000; /* boja */
   color: #fff;
   line-height: 1.7em;
 }
@@ -165,12 +176,12 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 5px 0px;
-  background-color: #078c03; /* boja */
+  background-color: #008000; /* boja */
   gap: 25px;
 }
 
 .social-network i {
-  color: #ffff00; /* boja */
+  color: #ffff80; /* boja */
 }
 
 .social-network i:hover {
@@ -291,7 +302,7 @@ h3 {
   }
 
   .caption span.border {
-    background-color: #078c03;
+    background-color: #008000;
     color: #fff;
     padding: 8px;
     font-size: 16px;
@@ -330,7 +341,7 @@ h3 {
   }
 
   .caption span.border {
-    background-color: #078c03;
+    background-color: #008000;
     color: #fff;
     padding: 8px;
     font-size: 16px;
@@ -364,7 +375,7 @@ h3 {
     font-weight: 400;
     border: none;
     outline: none;
-    color: #ffff00; /* boja */
+    color: #ffff80; /* boja */
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -396,8 +407,8 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #078c03;
-  color: #ffff00;
+  background-color: #008000;
+  color: #ffff80;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
