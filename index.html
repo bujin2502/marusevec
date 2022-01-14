@@ -1,217 +1,313 @@
 <!DOCTYPE html>
 <html lang="hr">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Web stranice Turističke zajednice Općine Maruševec" />
-<meta name="author" content="Zlatko Pračić, Marijana Fatiga" />
-<meta name="keywords" content="Maruševec, dvorac, crkva, Pontgratz, biciklijada," />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-<title>Maruševec</title>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web stranice Turističke zajednice Općine Maruševec"
+    />
+    <meta name="author" content="Zlatko Pračić, Marijana Fatiga" />
+    <meta
+      name="keywords"
+      content="Maruševec, dvorac, crkva, Pontgratz, biciklijada,"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Maruševec</title>
+  </head>
 
-<body>
-
-<!--Naslovna-->
-<header>
-  <!--Navigacija-->
-  <div class="logo">
-  <a href="index.html"><img src="img/Logo.png" alt="Logo općine Maruševec"></a>
-  </div>
-<div class="dd-menu">
-<!--dropdown-->
-<div class="dropdown">
-  <button class="dropbtn">Posjeti 
-    <i class="fa fa-caret-down"></i>
-      </button>
-        <div class="dropdown-content">
-          <a href="posjeti.html#smjestaj">Smještaj</a>
-          <a href="posjeti.html#restorani">Restorani</a>
-          <a href="posjeti.html#informacije">Korisne informacije</a>
+  <body>
+    <!--Naslovna-->
+    <header>
+      <!--Navigacija-->
+      <div class="logo">
+        <a href="index.html"
+          ><img src="img/Logo.png" alt="Logo općine Maruševec"
+        /></a>
+      </div>
+      <div class="dd-menu">
+        <!--dropdown-->
+        <div class="dropdown">
+          <button class="dropbtn">
+            Posjeti
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="posjeti.html#smjestaj">Smještaj</a>
+            <a href="posjeti.html#restorani">Restorani</a>
+            <a href="posjeti.html#informacije">Korisne informacije</a>
+          </div>
         </div>
-</div> 
-  
-  <div class="dropdown">
-    <button class="dropbtn">Istraži 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="istrazi.html#dvorac">Dvorac</a>
-      <a href="istrazi.html#crkva">Crkva</a>
-      <a href="istrazi.html#opcina">Općina</a>
-      <a href="istrazi.html#skola">Osnovna škola</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            Istraži
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="istrazi.html#dvorac">Dvorac</a>
+            <a href="istrazi.html#crkva">Crkva</a>
+            <a href="istrazi.html#opcina">Općina</a>
+            <a href="istrazi.html#skola">Osnovna škola</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Budi aktivan
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="aktivan.html#biciklo">Biciklističke staze</a>
+            <a href="aktivan.html#kubura">Kuburaška udruga</a>
+            <a href="aktivan.html#zene">Udruga žena</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            Događaji
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="dogadaji.html#advent">Advent</a>
+            <a href="dogadaji.html#ciselska">Čiselska nedela</a>
+            <a href="dogadaji.html#opcina">Dan općine</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Info
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="info.html#nama">O nama</a>
+            <a href="info.html#kontakt">Kontakt / Lokator</a>
+          </div>
+        </div>
+      </div>
+      <!--Mobile Nav-->
+
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="posjeti.html">Posjeti</a>
+          <a href="istrazi.html">Istraži</a>
+          <a href="aktivan.html">Budi aktivan</a>
+          <a href="dogadaji.html">Događaji</a>
+          <a href="info.html">Info</a>
+        </div>
+      </div>
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+
+      <span
+        style="font-size: 25px; cursor: pointer"
+        onclick="openNav()"
+        ;
+        class="hamburger"
+        >&#9776;</span
+      >
+    </header>
+
+    <main>
+      <!--- Parallax -->
+
+      <div class="bgimg-1">
+        <div class="caption">
+          <span class="border">Dvorac Pongratz - Maruševec</span>
+        </div>
+      </div>
+
+      <div
+        style="
+          color: #777;
+          background-color: white;
+          text-align: center;
+          padding: 50px 80px;
+          text-align: justify;
+        "
+      >
+        <h3 style="text-align: center">Parallax Demo</h3>
+        <p>
+          Parallax scrolling is a web site trend where the background content is
+          moved at a different speed than the foreground content while
+          scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis
+          nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit
+          pellentesque a, magna turpis est sapien duis blandit dignissim.
+          Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum
+          consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget
+          et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus
+          vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar,
+          in in neque risus odio. Accumsan fringilla vulputate at quibusdam
+          sociis eleifend, aenean maecenas vulputate, non id vehicula lorem
+          mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel,
+          non sit platea sit, maecenas ante augue etiam maecenas, porta
+          porttitor placerat leo.
+        </p>
+      </div>
+
+      <div class="bgimg-2">
+        <div class="caption">
+          <span
+            class="border"
+            style="
+              background-color: transparent;
+              font-size: 25px;
+              color: #f7f7f7;
+            "
+            >LESS HEIGHT</span
+          >
+        </div>
+      </div>
+
+      <div style="position: relative">
+        <div
+          style="
+            color: #ddd;
+            background-color: #282e34;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+          "
+        >
+          <p>
+            Scroll up and down to really get the feeling of how Parallax
+            Scrolling works.
+          </p>
+        </div>
+      </div>
+
+      <div class="bgimg-3">
+        <div class="caption">
+          <span
+            class="border"
+            style="
+              background-color: transparent;
+              font-size: 25px;
+              color: #f7f7f7;
+            "
+            >SCROLL UP</span
+          >
+        </div>
+      </div>
+
+      <div style="position: relative">
+        <div
+          style="
+            color: #ddd;
+            background-color: #282e34;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+          "
+        >
+          <p>
+            Scroll up and down to really get the feeling of how Parallax
+            Scrolling works.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="triple-column">
+        <ul>
+          <li><h5>Turistička zajednica općine Maruševec</h5></li>
+          <li>
+            <p>
+              Upoznajte baštinu i prirodne ljepote naše općine, uživajte u našim
+              kulturno zabavnim programima.
+            </p>
+          </li>
+          <li><p>+385 42 1111 222</p></li>
+          <li><p>Maruševec 22</p></li>
+          <li><a href="mailto:info@marusevec.hr">info@marusevec.hr</a></li>
+        </ul>
+      </div>
+      <div class="triple-column">
+        <ul>
+          <li><h5>Važnije informacije</h5></li>
+          <li><a href="#">Otvoreni natječaji</a></li>
+          <li><a href="#">Zatvoreni natječaji</a></li>
+          <li><a href="#">Godišnje financijsko izvješće</a></li>
+        </ul>
+        <ul>
+          <li><h5>Općine prijatelji</h5></li>
+          <li>
+            <a href="https://www.rogatec.si/" target="_blank"
+              >Općina Rogatec (Republika Slovenija)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.rattenberg.at/" target="_blank"
+              >Općina Rattenberg (Republika Austrija)</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="triple-column">
+        <ul>
+          <li><h5>Direktor</h5></li>
+          <li>Ivo Ivić</li>
+          <li>telefon: + 385 42 1111 333</li>
+          <li>
+            <a href="mailto:direktor@marusevec.hr">direktor@marusevec.hr</a>
+          </li>
+        </ul>
+        <ul>
+          <li><h5>Tajnica</h5></li>
+          <li>Ana Horvat</li>
+          <li>telefon: + 385 42 1111 444</li>
+          <li>
+            <a href="mailto:tajnica@marusevec.hr">tajnica@marusevec.hr</a>
+          </li>
+        </ul>
+        <ul>
+          <li><h5>Webmaster</h5></li>
+          <li>Petar Perić</li>
+          <li>telefon: + 385 42 1111 555</li>
+          <li>
+            <a href="mailto:webmaster@marusevec.hr">webmaster@marusevec.hr</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="social-network">
+      <a
+        href="https://www.youtube.com/channel/UC1gkZQBr_0aXL4TyS8fZpIg/featured"
+        target="_blank"
+        ><i class="fa fa-youtube-play fa-2x"></i
+      ></a>
+      <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
+      <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+      <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
     </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">Budi aktivan 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="aktivan.html#biciklo">Biciklističke staze</a>
-      <a href="aktivan.html#kubura">Kuburaška udruga</a>
-      <a href="aktivan.html#zene">Udruga žena</a>
-    </div>
-  </div> 
 
-  <div class="dropdown">
-    <button class="dropbtn">Događaji 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="dogadaji.html#advent">Advent</a>
-      <a href="dogadaji.html#ciselska">Čiselska nedela</a>
-      <a href="dogadaji.html#opcina">Dan općine</a>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
 
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">Info 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="info.html#nama">O nama</a>
-      <a href="info.html#kontakt">Kontakt / Lokator</a>
-    </div>
-  </div> 
-</div>
-  <!--Mobile Nav-->
-
-  <!-- The overlay -->
-<div id="myNav" class="overlay">
-
-  <!-- Button to close the overlay navigation -->
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-  <!-- Overlay content -->
-  <div class="overlay-content">
-    <a href="posjeti.html">Posjeti</a>
-    <a href="istrazi.html">Istraži</a>
-    <a href="aktivan.html">Budi aktivan</a>
-    <a href="dogadaji.html">Događaji</a>
-    <a href="info.html">Info</a>
-  </div>
-
-</div>
-
-<!-- Use any element to open/show the overlay navigation menu -->
-  
-  <span style="font-size:25px;cursor:pointer" onclick="openNav()"; class="hamburger" >&#9776;</span>
-  
-</header>
-
-<main>
-
-  <!--- Parallax -->
-
-  <div class="bgimg-1">
-    <div class="caption">
-    <span class="border">Dvorac Pongratz - Maruševec</span>
-    </div>
-  </div>
-  
-  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-    <h3 style="text-align:center;">Parallax Demo</h3>
-    <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
-  </div>
-  
-  <div class="bgimg-2">
-    <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
-    </div>
-  </div>
-  
-  <div style="position:relative;">
-    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-    </div>
-  </div>
-  
-  <div class="bgimg-3">
-    <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
-    </div>
-  </div>
-  
-  <div style="position:relative;">
-    <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-    <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-    </div>
-  </div>
-</main>
-
-<footer>
-<div class="triple-column">
-  
-    <ul>
-      <li><h5>Turistička zajednica općine Maruševec</h5></li>
-      <li><p>Upoznajte baštinu i prirodne ljepote naše općine, uživajte u našim kulturno zabavnim programima.</p></li>
-      <li><p>+385 42 1111 222</p></li>
-      <li><p>Maruševec 22 </p></li>
-      <li><a href="mailto:info@marusevec.hr">info@marusevec.hr</a></li>
-    </ul>
-    </div>
-<div class="triple-column">
-  <ul>
-    <li><h5>Važnije informacije</h5></li>
-    <li><a href="#">Otvoreni natječaji</a></li>
-    <li><a href="#">Zatvoreni natječaji</a></li>
-    <li><a href="#">Godišnje financijsko izvješće</a></li>
-  </ul>
-  <ul>
-    <li><h5>Općine prijatelji</h5></li>
-    <li><a href="https://www.rogatec.si/" target="_blank">Općina Rogatec (Republika Slovenija)</a></li>
-    <li><a href="https://www.rattenberg.at/" target="_blank">Općina Rattenberg (Republika Austrija)</a></li>
-  </ul>
-  
-</div>
-</div>
-<div class="triple-column">
-  <ul>
-    <li><h5>Direktor</h5></li>
-    <li>Ivo Ivić</li>
-    <li>telefon: + 385 42 1111 333</li>
-    <li><a href="mailto:direktor@marusevec.hr">direktor@marusevec.hr</a></li>
-  </ul>
-  <ul>
-    <li><h5>Tajnica</h5></li>
-    <li>Ana Horvat</li>
-    <li>telefon: + 385 42 1111 444</li>
-    <li><a href="mailto:tajnica@marusevec.hr">tajnica@marusevec.hr</a></li>
-  </ul>
-  <ul>
-    <li><h5>Webmaster</h5></li>
-    <li>Petar Perić</li>
-    <li>telefon: + 385 42 1111 555</li>
-    <li><a href="mailto:webmaster@marusevec.hr">webmaster@marusevec.hr</a></li>
-  </ul>
-
-
-</div>
-
-
-
-</footer>
-
-<div class="social-network">
-  <a href="https://www.youtube.com/channel/UC1gkZQBr_0aXL4TyS8fZpIg/featured" target="_blank"><i class="fa fa-youtube-play fa-2x"></i></a>
-  <a href="#"><i class="fa fa-facebook-official fa-2x"></i></a>
-  <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
-  <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
-
-</div>
-
-<script>
-  function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-  }
-  
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-  }
-  </script>
-</body>
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+  </body>
 </html>

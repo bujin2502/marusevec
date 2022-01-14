@@ -2,44 +2,46 @@
   box-sizing: border-box; /* Kada se odredi border-box tada visina i širina obuhvate content, padding i border */
 }
 
-main{
+main {
   margin-top: 77px;
-/*   padding: 10px 80px;  */
+  /*   padding: 10px 80px;  */
 }
 
-h1, h2, h3, h4{
-  text-align:center;
+h1,
+h2,
+h3,
+h4 {
   padding: 0px;
-  margin-top: 0pt;
+  margin-top: 20pt;
 }
 
-h5{
+h5 {
   font-size: 18px;
-margin: 4px 0px;
-color: #fff; /* boja */
+  margin: 4px 0px;
+  color: #fff; /* boja */
 }
 
-main div{
-/*  max-width: 1920px !important; */
+main div {
+  /*  max-width: 1920px !important; */
   width: 100%;
   margin-top: 0px;
 }
 
 .parni {
-  background-color: #0ABF04;
+  background-color: #0abf04;
   width: 100%;
 }
 
 .neparni {
-  background-color: #EDE9E8;
+  background-color: #ede9e8;
   padding: 0px;
 }
 
 body {
   font-family: Poppins, sans-serif;
-  background-color: #fff;  /* boja */
-  margin: 0px !important  
-  }
+  background-color: #fff; /* boja */
+  margin: 0px !important;
+}
 
 header {
   position: fixed;
@@ -48,7 +50,7 @@ header {
   right: 0px;
   /* max-width: 1920px; */
   width: 100%;
-  background-color: #008000;  /* boja */
+  background-color: #008000; /* boja */
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -56,36 +58,36 @@ header {
   z-index: 10;
 }
 
-ul{
+ul {
   list-style-type: none;
   line-height: 1.7em;
   margin-bottom: 30px;
 }
 
-a{
-  color: #FFFF00;    /* boja */
+a {
+  color: #ffff00; /* boja */
   text-decoration: none;
 }
-  
-a:hover{
-  color: #fff ;   /* boja */
-  text-decoration: underline;;
-}
-  
-a:visited{
-  color: #CCCC00;   /* boja */
+
+a:hover {
+  color: #fff; /* boja */
   text-decoration: underline;
 }
 
-.logo{
+a:visited {
+  color: #cccc00; /* boja */
+  text-decoration: underline;
+}
+
+.logo {
   width: 50vw;
 }
 
-.logo img{
+.logo img {
   width: 170px;
 }
 
-.dd-menu{
+.dd-menu {
   width: 60vw;
   display: flex;
   flex-flow: row;
@@ -101,101 +103,102 @@ header a {
   padding: 14px 16px;
   text-decoration: none;
 }
-  
+
 .dropdown {
   float: left;
   overflow: hidden;
 }
-  
+
 .dropdown .dropbtn {
   font-size: 18px;
-  font-weight: 500;  
+  font-weight: 500;
   border: none;
   outline: none;
-  color: #FFFF00;  /* boja */
+  color: #ffff00; /* boja */
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
-  
-header a:hover, .dropdown:hover .dropbtn {
+
+header a:hover,
+.dropdown:hover .dropbtn {
   text-decoration: underline;
-  text-decoration-color: #FFFF00;  /* boja */
+  text-decoration-color: #ffff00; /* boja */
   transition: 1s;
 }
-  
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #008000;  /* boja */
+  background-color: #008000; /* boja */
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px #000;  /* boja */
+  box-shadow: 0px 8px 16px 0px #000; /* boja */
   z-index: 1;
 }
-  
+
 .dropdown-content a {
   float: none;
-  color: #FFFF00;  /* boja */
+  color: #ffff00; /* boja */
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: left;
   font-size: 18px;
 }
-  
+
 .dropdown-content a:hover {
-  background-color: #0ABF04;  /* boja */
+  background-color: #0abf04; /* boja */
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-footer{
+footer {
   display: flex;
   flex-flow: row;
-  background-color: #078C03;  /* boja */
+  background-color: #078c03; /* boja */
   color: #fff;
   line-height: 1.7em;
 }
 
-.triple-column{
+.triple-column {
   width: 33%;
   text-align: left;
   padding: 10px;
 }
 
-.social-network{
+.social-network {
   display: flex;
   flex-flow: row;
   align-items: center;
   justify-content: center;
   padding: 5px 0px;
-  background-color: #078C03;  /* boja */
+  background-color: #078c03; /* boja */
   gap: 25px;
 }
 
-.social-network i{
-  color: #FFFF00;  /* boja */
+.social-network i {
+  color: #ffff00; /* boja */
 }
 
-.social-network i:hover{
-  color: #fff;  /* boja */
+.social-network i:hover {
+  color: #fff; /* boja */
   transition: 1s;
 }
 
 /* The Overlay (background) */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  background-color: #000;  /* boja */  /* Black fallback color */
-  background-color: #773823;  /* boja */  /* Black w/opacity */
+  background-color: #000; /* boja */ /* Black fallback color */
+  background-color: #773823; /* boja */ /* Black w/opacity */
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -217,14 +220,15 @@ footer{
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #000;  /* boja */
+  color: #000; /* boja */
   display: block; /* Display block instead of inline */
   transition: 0.5s; /* Transition effects on hover (color) */
 }
 
 /* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #3d502f;  /* boja */
+.overlay a:hover,
+.overlay a:focus {
+  color: #3d502f; /* boja */
 }
 
 /* Position the close button (top right corner) */
@@ -236,21 +240,21 @@ footer{
   padding: 0px;
 }
 
-.overlay, .hamburger{
+.overlay,
+.hamburger {
   display: none;
 }
 
-
-
 /* Parallax */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
   position: relative;
   opacity: 0.65;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 .bgimg-1 {
   background-image: url("img/marusevec-dvorac.jpg");
@@ -290,33 +294,35 @@ h3 {
 }
 
 @media only screen and (max-width: 700px) {
-
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
     background-attachment: scroll;
   }
 
   .caption span.border {
-    background-color: #078C03;
+    background-color: #078c03;
     color: #fff;
     padding: 8px;
     font-size: 16px;
     letter-spacing: 4px;
   }
 
-  footer{
+  footer {
     flex-flow: column;
     padding: 30px 5%;
   }
-  
-  .triple-column{
+
+  .triple-column {
     width: 90%;
   }
-  
-  .dropdown{
+
+  .dropdown {
     display: none;
   }
 
-  .overlay, .hamburger{
+  .overlay,
+  .hamburger {
     display: block;
   }
 
@@ -324,16 +330,17 @@ h3 {
     width: 49.99999%;
     margin: 6px 0;
   }
-
 }
 
 @media only screen and (max-width: 500px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
     background-attachment: scroll;
   }
 
   .caption span.border {
-    background-color: #078C03;
+    background-color: #078c03;
     color: #fff;
     padding: 8px;
     font-size: 16px;
@@ -344,18 +351,18 @@ h3 {
     width: 100%;
   }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
@@ -364,10 +371,10 @@ h3 {
 
   .dropdown .dropbtn {
     font-size: 12px;
-    font-weight: 400;  
+    font-weight: 400;
     border: none;
     outline: none;
-    color: #FFFF00;  /* boja */
+    color: #ffff00; /* boja */
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -382,10 +389,12 @@ h3 {
 }
 
 .map {
-text-align: center;
+  text-align: center;
 }
 
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -396,9 +405,9 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
-  background-color: #078C03;
-  color: #FFFF00;
+input[type="submit"] {
+  background-color: #078c03;
+  color: #ffff00;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -406,8 +415,8 @@ input[type=submit] {
   font-size: 18px;
 }
 
-input[type=submit]:hover {
-  background-color: #0ABF04;
+input[type="submit"]:hover {
+  background-color: #0abf04;
   color: #fff;
 }
 
