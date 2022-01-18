@@ -172,8 +172,8 @@ footer {
   padding: 0px 10px;
 }
 
-.triple-column {
-  width: 33%;
+.four-column {
+  width: 22%;
   text-align: left;
   padding: 10px;
 }
@@ -207,7 +207,7 @@ footer {
   left: 0;
   top: 0;
   background-color: #000; /* boja */ /* Black fallback color */
-  background-color: #773823; /* boja */ /* Black w/opacity */
+  background-color: #008000; /* boja */ /* Black w/opacity */
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
@@ -228,8 +228,8 @@ footer {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
-  color: #000; /* boja */
+  font-size: 26px;
+  color: #ffff80; /* boja */
   display: block; /* Display block instead of inline */
   transition: 0.5s; /* Transition effects on hover (color) */
 }
@@ -237,7 +237,7 @@ footer {
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover,
 .overlay a:focus {
-  color: #3d502f; /* boja */
+  color: #fff; /* boja */
 }
 
 /* Position the close button (top right corner) */
@@ -327,7 +327,7 @@ h3 {
     padding: 30px 5%;
   }
 
-  .triple-column {
+  .four-column {
     width: 90%;
   }
 
@@ -396,12 +396,12 @@ h3 {
   }
 }
 
-/* Kontakt */
-
 .map {
   text-align: center;
   width: auto;
 }
+
+/* Kontakt */
 
 input[type="text"],
 select,
