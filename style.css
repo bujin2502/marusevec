@@ -3,16 +3,12 @@
 }
 
 main {
-  margin-top: 77px;
+  margin-top: 77.5px;
   /*   padding: 10px 80px;  */
 }
 
-h1,
-h2,
-h3,
-h4 {
-  padding: 0px;
-  margin-top: 20pt;
+h2 {
+  padding: 83px;
 }
 
 h5 {
@@ -24,6 +20,7 @@ h5 {
 
 p {
   color: #616161;
+  padding: 10px, 75px;
 }
 
 p.podnozje {
@@ -189,6 +186,14 @@ footer {
   transition: 1s;
 }
 
+.light {
+  background-color: #eaf1ea;
+}
+
+.dark {
+  background-color: #98f595;
+}
+
 /* The Overlay (background) */
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
@@ -350,8 +355,7 @@ h3 {
   .four-column {
     width: 88%;
     padding: 10px;
-
-
+  }
   .caption span.border {
     background-color: #111;
     color: #fff;
