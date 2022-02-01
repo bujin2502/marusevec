@@ -5,10 +5,16 @@
 main {
   margin-top: 77.5px;
   /*   padding: 10px 80px;  */
+  background-color: #f2f2f2;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
 }
 
 h2 {
-  padding: 83px;
+  padding: 83px 10% 5px 10%;
 }
 
 h5 {
@@ -20,11 +26,7 @@ h5 {
 
 p {
   color: #616161;
-  padding: 10px, 75px;
-}
-
-p.podnozje {
-  color: #ffff80;
+  padding: 5px 10%;
 }
 
 main div {
@@ -160,7 +162,6 @@ footer {
   color: #fff;
   line-height: 1.7em;
 }
-
 .four-column {
   width: 22%;
   text-align: left;
@@ -187,7 +188,7 @@ footer {
 }
 
 .light {
-  background-color: #eaf1ea;
+  background-color: #f2f2f2;
 }
 
 .dark {
@@ -437,17 +438,21 @@ input[type="submit"]:hover {
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 10px 20%;
 }
 
 /* Galerija */
 .gallery {
-  align-self: center;
-  margin: 10px 50 px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin: 10px 0px;
+  padding: 0 10%;
 }
 
 .gallery img {
-  width: 230;
+  width: 270px;
   padding: 5px;
   filter: grayscale(100);
   transition: 1s;
@@ -455,5 +460,5 @@ input[type="submit"]:hover {
 
 .gallery img:hover {
   filter: grayscale(0);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }

@@ -126,62 +126,65 @@
 
     <main>
       <div>
-        <h1>O nama</h1>
+        <h1>Info</h1>
       </div>
-      <div class="info">
-        <div class="triple-column">
-          <h2>Kontakt forma</h2>
-          <div class="container">
-            <form action="/action_page.php">
-              <label for="fname">Ime</label>
-              <input
-                type="text"
-                id="fname"
-                name="firstname"
-                placeholder="Vaše ime.."
-              />
+      <div>
+        <h2>O nama</h2>
+      </div>
+      <div>
+        <h2>Kontakt forma</h2>
+      </div>
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">Ime</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Vaše ime.."
+          />
 
-              <label for="lname">Prezime</label>
-              <input
-                type="text"
-                id="lname"
-                name="lastname"
-                placeholder="Vaše prezime.."
-              />
+          <label for="lname">Prezime</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Vaše prezime.."
+          />
 
-              <label for="country">Država</label>
-              <select id="country" name="country">
-                <option value="hrvatska">Hrvatska</option>
-                <option value="Slovenija">Slovenija</option>
-                <option value="Mađarska">Mađarska</option>
-              </select>
+          <label for="country">Država</label>
+          <select id="country" name="country">
+            <option value="hrvatska">Hrvatska</option>
+            <option value="Slovenija">Slovenija</option>
+            <option value="Mađarska">Mađarska</option>
+          </select>
 
-              <label for="subject">Predmet</label>
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="Napišite nešto.."
-                style="height: 200px"
-              ></textarea>
+          <label for="subject">Predmet</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Napišite nešto.."
+            style="height: 200px"
+          ></textarea>
 
-              <input type="submit" value="Submit" />
-            </form>
-          </div>
-        </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </main>
 
     <footer>
       <div class="four-column">
         <ul>
           <li><h5>Turistička zajednica općine Maruševec</h5></li>
+          <br />
           <li>
-            <p class="podnozje">
-              Upoznajte baštinu i prirodne ljepote naše općine, uživajte u našim
-              kulturno zabavnim programima.
-            </p>
+            Upoznajte baštinu i prirodne ljepote naše općine, uživajte u našim
+            kulturno zabavnim programima.
           </li>
-          <li><p class="podnozje">+385 42 1111 222</p></li>
-          <li><p class="podnozje">Maruševec 22</p></li>
+          <br />
+          <li>+385 42 1111 222</li>
+          <li>Maruševec 22</li>
+          <br />
           <li><a href="mailto:info@marusevec.hr">info@marusevec.hr</a></li>
         </ul>
       </div>
@@ -231,7 +234,9 @@
         </ul>
       </div>
       <div class="four-column">
-        <h5>Gdje se nalazimo</h5>
+        <ul>
+          <li><h5>Gdje se nalazimo</h5></li>
+        </ul>
         <p class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22062.607313599932!2d16.16399135485173!3d46.27356382758547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765f8a63416bf2f%3A0x2b29be61d26ea60!2s42243%2C%20Maru%C5%A1evec!5e0!3m2!1sen!2shr!4v1642176733484!5m2!1sen!2shr"
