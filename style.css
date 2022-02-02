@@ -5,7 +5,7 @@
 main {
   margin-top: 77.5px;
   /*   padding: 10px 80px;  */
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -14,7 +14,8 @@ h1 {
 }
 
 h2 {
-  padding: 83px 10% 5px 10%;
+  padding: 83px 15% 5px 15%;
+  color: #111111;
 }
 
 h5 {
@@ -25,8 +26,9 @@ h5 {
 }
 
 p {
-  color: #616161;
-  padding: 5px 10%;
+  color: #111111;
+  padding: 15px 15%;
+  margin-bottom: 0px;
 }
 
 main div {
@@ -133,7 +135,7 @@ header a:hover,
   position: absolute;
   background-color: #008000; /* boja */
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px #000; /* boja */
+  box-shadow: 0px 8px 16px 0px #111; /* boja */
   z-index: 1;
 }
 
@@ -188,11 +190,11 @@ footer {
 }
 
 .light {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .dark {
-  background-color: #98f595;
+  background-color: #a7ffa3;
 }
 
 /* The Overlay (background) */
@@ -204,7 +206,7 @@ footer {
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
-  background-color: #000; /* boja */ /* Black fallback color */
+  background-color: #111; /* boja */ /* Black fallback color */
   background-color: #008000; /* boja */ /* Black w/opacity */
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
@@ -284,7 +286,7 @@ footer {
   top: 50%;
   width: 100%;
   text-align: center;
-  color: #000;
+  color: #111;
 }
 
 .caption span.border {
@@ -437,7 +439,7 @@ input[type="submit"]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   padding: 10px 20%;
 }
 
@@ -447,18 +449,17 @@ input[type="submit"]:hover {
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
-  margin: 10px 0px;
-  padding: 0 10%;
+  padding: 10px 10%;
 }
 
 .gallery img {
-  width: 270px;
-  padding: 5px;
+  width: 242px;
+  padding: 15px;
   filter: grayscale(100);
   transition: 1s;
 }
 
 .gallery img:hover {
   filter: grayscale(0);
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
