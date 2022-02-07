@@ -4,7 +4,6 @@
 
 main {
   margin-top: 77.5px;
-  /*   padding: 10px 80px;  */
   background-color: #ffffff;
 }
 
@@ -311,7 +310,7 @@ footer {
 
 .bgimg-3 {
   background-image: url("img/marusevec-biciklijada.jpg");
-  min-height: 400px;
+  min-height: 600px;
 }
 
 .caption {
@@ -461,8 +460,7 @@ input[type="submit"]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #ffffff;
-  padding: 10px 20%;
+  padding: 10px 15%;
 }
 
 /* Galerija */

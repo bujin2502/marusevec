@@ -128,47 +128,78 @@
       <div>
         <h1>Info</h1>
       </div>
-      <div>
-        <h2>O nama</h2>
-      </div>
-      <div>
-        <h2>Kontakt forma</h2>
-      </div>
-      <div class="container">
-        <form action="/action_page.php">
-          <label for="fname">Ime</label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Vaše ime.."
+      <div class="light">
+        <h2 id="nama">O nama</h2>
+        <p>
+          <img
+            src="img/marusevec-opcina.jpg"
+            width="55%"
+            alt="Zračna snimka općine Maruševec"
+            style="float: left; margin-right: 20px"
           />
+          Općina Maruševec još je u počecima "izgradnje" kao turističke
+          lokacije. Uskoro se pokreće izgradnja Kulturnog centra u Maruševcu
+          koji će biti otvoren za sve mještane, udruge, dramske skupine, izložbe
+          i slično. Iako se krećemo ka budućnosti i moderniziranju, Maruševec je
+          veoma okrenut tradiciji što se može vidjeti po našim udrugama i
+          običajima. Uz udruge kao što su Kuburaška udruga Maruševec koja se
+          bavi pucanjem iz kubura, u Maruševcu postoji Kulturno umjetničko
+          društvo Maruševec kojem je fokus folklor i ples uz dramske sekcije,
+          udruga žena koje se bave i ručnim radom i druženjem te sportske
+          udruge. U Maruševcu se slavi Dan općine, Božić, Uskrs, Sv. Juraj te
+          dolaze razni izvođači koji održavaju koncerte ili predstave poput
+          Kerekeš Teatra. Iako Maruševec ima brojna događanja i posjetitelje,
+          treba se težiti budućnosti te modernizaciji
+        </p>
+      </div>
+      <div class="dark">
+        <h2 id="kontakt">Kontakt</h2>
+        <br />
+        <h3 style="padding: 0px 15%; color: black">
+          Turistička zajednica općine Maruševec
+        </h3>
+        <p>adresa: Maruševec 22, telefon: +385 42 1111 222</p>
+        <a style="padding: 0px 15%" href="mailto:info@marusevec.hr"
+          >info@marusevec.hr</a
+        >
+        <br />
+        <br />
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="fname">Ime</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Vaše ime.."
+            />
 
-          <label for="lname">Prezime</label>
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Vaše prezime.."
-          />
+            <label for="lname">Prezime</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Vaše prezime.."
+            />
 
-          <label for="country">Država</label>
-          <select id="country" name="country">
-            <option value="hrvatska">Hrvatska</option>
-            <option value="Slovenija">Slovenija</option>
-            <option value="Mađarska">Mađarska</option>
-          </select>
+            <label for="country">Država</label>
+            <select id="country" name="country">
+              <option value="hrvatska">Hrvatska</option>
+              <option value="Slovenija">Slovenija</option>
+              <option value="Mađarska">Mađarska</option>
+            </select>
 
-          <label for="subject">Predmet</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Napišite nešto.."
-            style="height: 200px"
-          ></textarea>
+            <label for="subject">Predmet</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Napišite nešto.."
+              style="height: 200px"
+            ></textarea>
 
-          <input type="submit" value="Pošalji" />
-        </form>
+            <input type="submit" value="Pošalji" />
+          </form>
+        </div>
       </div>
     </main>
 
