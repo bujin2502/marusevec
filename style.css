@@ -412,12 +412,12 @@ footer {
   }
 
   .dropdown .dropbtn {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
     border: none;
     outline: none;
     color: #ffff80; /* boja */
-    padding: 14px 16px;
+    padding: 12px 14px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
